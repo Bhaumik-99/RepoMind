@@ -182,11 +182,7 @@ repomind/
 └── .env.example
 ```
 
-## Resume positioning
 
-Do not claim benchmark numbers until you run an evaluation set. A defensible bullet is:
-
-> Built a GenAI-powered GitHub codebase assistant using RAG, local embeddings, FAISS and an LLM, with line-level source citations, repository ingestion, AI code review and automated documentation generation.
 
 ## Next production upgrades
 
