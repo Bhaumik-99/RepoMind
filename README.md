@@ -43,14 +43,18 @@ Answer + File/Line Citations
 
 ## Quick start
 
-### 1. Clone
+### 1. Clone the repository
+
+Clone the actual RepoMind repository:
 
 ```bash
-git clone <your-repo-url>
-cd repomind
+git clone https://github.com/Bhaumik-99/RepoMind.git
+cd RepoMind
 ```
 
 ### 2. Configure environment
+
+Create your local environment file:
 
 ```bash
 cp .env.example .env
@@ -68,6 +72,8 @@ OLLAMA_MODEL=llama3.2
 
 ### 3. Run with Docker
 
+From the project root:
+
 ```bash
 docker compose up --build
 ```
@@ -82,13 +88,28 @@ Backend:
 ```bash
 cd backend
 python -m venv .venv
-# Windows: .venv\\Scripts\\activate
-# macOS/Linux: source .venv/bin/activate
+```
+
+Windows:
+
+```bash
+.venv\\Scripts\\activate
+```
+
+macOS/Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies and start the API:
+
+```bash
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Frontend:
+In a second terminal, start the frontend:
 
 ```bash
 cd frontend
